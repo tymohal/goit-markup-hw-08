@@ -528,9 +528,7 @@ a {
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -658,7 +656,6 @@ a {
   .auth-nav__link {
     font-size: 12px;
     line-height: 14px;
-    /* identical to box height */
     letter-spacing: 0.02em;
     margin-bottom: 10px;
   }
@@ -671,7 +668,6 @@ a {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-    /* identical to box height */
     letter-spacing: 0.02em;
   }
 }
@@ -686,7 +682,6 @@ a {
   .auth-nav__tel {
     font-size: 12px;
     line-height: 14px;
-    /* identical to box height */
     letter-spacing: 0.02em;
   }
 }
