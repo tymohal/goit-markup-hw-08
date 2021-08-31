@@ -1,0 +1,77 @@
+.inputs {
+  position: relative;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.inputs__name {
+  font-size: 12px;
+  line-height: 1.17;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  display: flex;
+  flex-direction: column;
+  color: $primary-text-color;
+}
+
+.inputs__form {
+  margin-top: 4px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputs__text {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  padding-left: 42px;
+}
+
+.inputs__form:focus-within > .inputs__icon {
+  fill: $accent-text-color;
+}
+
+.inputs__form:focus-within > .inputs__text {
+  border: 1px solid $accent-text-color;
+  outline: none;
+}
+
+.inputs__icon {
+  fill: rgba(33, 33, 33, 1);
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 15px;
+  top: 29px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputs__placeholder {
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  height: 120px;
+  width: 448px;
+
+  @media screen and (max-width: 1199px) {
+    width: 370px;
+  }
+}
+
+.inputs__form:focus-within > .inputs__placeholder {
+  border: 1px solid $accent-text-color;
+  outline: none;
+}
+
+.inputs textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}

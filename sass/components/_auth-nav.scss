@@ -1,0 +1,146 @@
+.auth-nav {
+  display: flex;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.auth__container {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-bottom: 64px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 84px;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.auth-nav__item {
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
+    }
+  }
+}
+
+.auth-nav__link,
+.auth-nav__tel {
+  display: flex;
+  align-items: baseline;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: $transition;
+  color: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    transition: $transition;
+    color: $primary-text-color;
+  }
+}
+
+.auth-nav__link {
+  @media screen and (max-width: 767px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+  }
+}
+
+.auth-nav__tel {
+  @media screen and (max-width: 767px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+  }
+}
+
+.auth-nav__envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  vertical-align: middle;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.auth-nav__smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  vertical-align: middle;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.auth-nav__envelope,
+.auth-nav__smartphone {
+  margin-right: 10px;
+}

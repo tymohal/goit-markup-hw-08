@@ -1,0 +1,20 @@
+.nav__meta {
+  display: flex;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 302px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 93px;
+  }
+}

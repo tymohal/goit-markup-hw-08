@@ -1,0 +1,30 @@
+.page-header {
+  position: relative;
+}
+
+.menu__container {
+  background-color: $primary-bg-color;
+  padding: 20px;
+  font-size: 20px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 40px 48px;
+    height: 796px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
