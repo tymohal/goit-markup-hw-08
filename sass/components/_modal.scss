@@ -1,19 +1,27 @@
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 581px;
-  min-width: 528px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: $border-radius;
   padding: 40px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
+    min-height: 609px;
+    min-width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
     min-height: 609px;
     min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
   }
 }
 
@@ -41,8 +49,8 @@
   margin-right: 5px;
   border: 2px solid #2a2a2a;
   border-radius: $border-radius;
-  cursor: pointer;
   transition: transform 250ms linear;
+  cursor: pointer;
 }
 
 .modal__checkbox:checked + .modal__icon {

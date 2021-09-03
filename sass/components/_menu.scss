@@ -4,21 +4,23 @@
 
 .menu__container {
   background-color: $primary-bg-color;
-  padding: 20px;
-  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 40px 48px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 40px 48px;
-    height: 796px;
+  transform: translateX(100%);
 
-    &.is-open {
-      display: block;
-    }
+  overflow-y: scroll;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  &.is-open {
+    display: block;
+    transform: translateX(0);
   }
 
   @media screen and (min-width: 768px) {
@@ -28,3 +30,31 @@
     margin: 0;
   }
 }
+
+.menu__container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $buttons-bg-color;
+  }
+}
+

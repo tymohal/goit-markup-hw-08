@@ -1,7 +1,6 @@
 .team {
   background-color: $accent-bg-color;
-  padding-bottom: 94px;
-  padding-top: 0;
+  padding: 94px 0;
   width: auto;
 
   @media screen and (max-width: 1199px) {
@@ -82,15 +81,18 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin: 0 0 10px;
+  margin: 0;
   padding: 0;
 }
 
-
+.team__name {
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
 .team__info {
   padding: 30px 32px;
-  text-align: center;
 }
 
 .team__position {
@@ -101,6 +103,10 @@
   background-color: $primary-bg-color;
   text-align: center;
   margin: 0;
-  margin-bottom: 10px;
+}
+
+.team__profession {
+  display: block;
+  text-align: center;
 }
 
