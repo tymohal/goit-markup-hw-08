@@ -78,7 +78,7 @@
 
 
 .card-set__item {
-  width: 370px;
+  width: 100%;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-left: 30px;
@@ -94,7 +94,11 @@
 }
 
 .card-set__info {
-  padding: 20px 24px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px 24px ;
+ 
 }
 
 .info__meta {
@@ -109,6 +113,8 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  letter-spacing: .06em;
+  
 }
 
 .info__text {

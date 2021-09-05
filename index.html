@@ -18,22 +18,18 @@
             <div class="navigation">
                 <nav class="navigation__container">
                     <a href="./index.html" class="nav__logo">Web<span class="nav__logostudio">Studio</span></a>
-                    <button 
-                        type="button" 
-                        class="navigation__button is-open" 
-                        aria-expanded="false"
-                        aria-controls="menu__container"
-                        data-menu-button
-                    >
-                        <svg 
-                            width="40" 
-                            height="40" 
-                            aria-label="Переключатель мобильного меню">
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="menu__container">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                             <use class="navigation__icon-menu" href="./images/sprite.svg#icon-menu_40px-1"></use>
-                            <use class="navigation__icon-cross" href="./images/sprite.svg#icon-close_40px-1"></use>
                         </svg>
                     </button>
-                    <div class="menu__container" id="menu__container" data-menu>
+
+                    <div class="menu__container js-menu-container" id="menu__container">
+                        <button class="menu-toggle js-close-menu">
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="navigation__icon-cross" href="./images/sprite.svg#icon-close_40px-1"></use>
+                            </svg>
+                        </button>
                         <div class="nav__meta">
                             <nav class="nav__container">
                                 <ul class="site-nav list">

@@ -920,6 +920,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .modal__checkbox {
@@ -1423,6 +1426,7 @@ a {
 
 .team__info {
   padding: 30px 32px;
+  text-align: center;
 }
 
 .team__position {
@@ -2014,7 +2018,7 @@ a {
 }
 
 .card-set__item {
-  width: 370px;
+  width: 100%;
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2036,7 +2040,17 @@ a {
 }
 
 .card-set__info {
-  padding: 20px 24px 20px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px 24px;
 }
 
 .info__meta {
@@ -2051,6 +2065,7 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  letter-spacing: .06em;
 }
 
 .info__text {
