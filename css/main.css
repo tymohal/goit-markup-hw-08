@@ -321,6 +321,10 @@ a {
           box-sizing: inherit;
 }
 
+h1, h2, h3, h4 {
+  text-decoration: none;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -1815,6 +1819,7 @@ a {
 @media screen and (max-width: 767px) {
   .subscribe__input {
     width: 100%;
+    padding-left: 10px;
   }
 }
 
@@ -2030,10 +2035,6 @@ a {
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-left: 30px;
-  margin-top: 30px;
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
 }
 
 .card-set__item:hover .card-set__text,
@@ -2045,6 +2046,28 @@ a {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .card-set__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-set__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
 }
 
 .card-set__info {
