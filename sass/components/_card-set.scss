@@ -78,8 +78,8 @@
 
 
 .card-set__item {
-  width: 100%;
-  border: 1px solid #eeeeee;
+  
+  
   box-sizing: border-box;
 
   &:hover .card-set__text,
@@ -111,6 +111,8 @@
   flex-direction: column;
   flex-grow: 1;
   padding: 20px 24px ;
+  border: 1px solid #eeeeee;
+  
  
 }
 

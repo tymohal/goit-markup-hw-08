@@ -514,7 +514,7 @@ h1, h2, h3, h4 {
 .site-nav__link--current::after {
   content: '';
   position: absolute;
-  top: 43px;
+  top: 44px;
   display: block;
   width: 100%;
   height: 4px;
@@ -537,14 +537,13 @@ h1, h2, h3, h4 {
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.02em;
+    padding-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 768 px) {
   .site-nav__link {
-    margin: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin: 10px;
   }
 }
 
@@ -604,7 +603,6 @@ h1, h2, h3, h4 {
 
 .auth-nav__item {
   cursor: pointer;
-  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -680,9 +678,9 @@ h1, h2, h3, h4 {
   .auth-nav__link {
     font-size: 12px;
     line-height: 14px;
+    /* identical to box height */
     letter-spacing: 0.02em;
     margin-bottom: 10px;
-    padding-top: 10px;
   }
 }
 
@@ -693,7 +691,7 @@ h1, h2, h3, h4 {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-    padding-bottom: 10px;
+    /* identical to box height */
     letter-spacing: 0.02em;
   }
 }
@@ -708,7 +706,7 @@ h1, h2, h3, h4 {
   .auth-nav__tel {
     font-size: 12px;
     line-height: 14px;
-    padding-bottom: 10px;
+    /* identical to box height */
     letter-spacing: 0.02em;
   }
 }
@@ -2031,8 +2029,6 @@ h1, h2, h3, h4 {
 }
 
 .card-set__item {
-  width: 100%;
-  border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2082,6 +2078,7 @@ h1, h2, h3, h4 {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .info__meta {
@@ -2417,5 +2414,8 @@ h1, h2, h3, h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
