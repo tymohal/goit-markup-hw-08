@@ -428,7 +428,14 @@ a {
   }
 }
 
-.nav_
+.nav__logoweb {
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
 .nav__logostudio {
   color: #212121;
   font-family: "Raleway", sans-serif;
@@ -1284,6 +1291,7 @@ a {
   font-size: 14px;
   line-height: 1.14;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .team {
@@ -1908,22 +1916,15 @@ a {
 
 .card-set__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .card-set__list {
-    margin: -15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .card-set__image {
@@ -1943,8 +1944,8 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1974,6 +1975,7 @@ a {
   letter-spacing: 0.03em;
   color: #ffffff;
   opacity: 0;
+  margin: 0;
 }
 
 .card-set__link {
@@ -2006,10 +2008,14 @@ a {
 }
 
 .card-set__item {
-  width: 100%;
+  width: 370px;
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 30px;
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
 }
 
 .card-set__item:hover .card-set__text,
@@ -2023,30 +2029,8 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 767px) {
-  .card-set__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card-set__item {
-    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
-        flex-basis: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .card-set__item {
-    -ms-flex-preferred-size: calc((100% - 3 * 45px) / 3);
-        flex-basis: calc((100% - 3 * 45px) / 3);
-    margin: 15px;
-  }
-}
-
 .card-set__info {
-  padding: 20px 24px;
+  padding: 20px 24px 20px 24px;
 }
 
 .info__meta {
@@ -2058,7 +2042,6 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -2068,7 +2051,6 @@ a {
   color: #757575;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
   text-decoration: none;
   padding: 0;
   margin: 0;
