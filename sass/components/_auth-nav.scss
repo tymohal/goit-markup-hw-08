@@ -1,5 +1,6 @@
 .auth-nav {
   display: flex;
+  align-items: baseline;
 
   @media screen and (max-width: 1199px) {
     display: block;
@@ -102,7 +103,7 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
-    /* identical to box height */
+    
 
     letter-spacing: 0.02em;
   }
@@ -115,7 +116,7 @@
     font-size: 12px;
     line-height: 14px;
     padding-bottom: 10px;
-    /* identical to box height */
+    
 
     letter-spacing: 0.02em;
   }
