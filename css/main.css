@@ -603,6 +603,7 @@ h1, h2, h3, h4 {
 
 .auth-nav__item {
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -678,9 +679,9 @@ h1, h2, h3, h4 {
   .auth-nav__link {
     font-size: 12px;
     line-height: 14px;
+    padding-top: 10px;
     /* identical to box height */
     letter-spacing: 0.02em;
-    margin-bottom: 10px;
   }
 }
 
@@ -706,6 +707,7 @@ h1, h2, h3, h4 {
   .auth-nav__tel {
     font-size: 12px;
     line-height: 14px;
+    padding-bottom: 10px;
     /* identical to box height */
     letter-spacing: 0.02em;
   }
