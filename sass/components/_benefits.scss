@@ -80,9 +80,12 @@
   @media screen and (max-width: 1200px) {
     align-items:flex-start;
     text-align: left;
-  }
 
-  
+  }
+@media screen and (max-width: 767px) {
+    align-items:flex-start;
+    text-align: center;
+}
 
  }
 

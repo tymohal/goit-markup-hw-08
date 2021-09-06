@@ -1226,6 +1226,15 @@ h1, h2, h3, h4 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .benefits__title {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: center;
+  }
+}
+
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
